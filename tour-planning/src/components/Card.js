@@ -9,22 +9,33 @@ function Card({id, name , image, info ,price, clickHandler}){
     }
     return(
 
-        <div>
+        <div className="card">
+
             <img src={image} className="image"></img>
 
-            <div>
-                <div>
-                    <h2>₹ {price}</h2>
-                    <h2>{name}</h2>
+            <div className="card-desc">
+
+                <div className="price-name-pannel">
+
+                    <h2 className="tour-price">₹ {price}</h2>
+                    <h2 className="tour-name">{name}</h2>
+
                 </div>
-                <div>
+
+                <div className="desc-section">
+
                     {description }
-                    <span onClick={readmoreHandler}>
+
+                    <span onClick={readmoreHandler} className="readmore">
                         {readmore ? `Show Less`:`Read More`}
+
                     </span>
                 </div>
+
             </div>
-            <button onClick={() => clickHandler(id)}>Not Interested</button>
+
+            <button onClick={() => clickHandler(id)} className="btn">Not Interested</button>
+        
         </div>
     )
 }
