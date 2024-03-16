@@ -8,7 +8,7 @@ function App() {
 
 
   function clickHandler(id){
-   const newTour = tours.filter((tour) => tour.id != id)
+   const newTour = tours.filter((tour) => tour.id !== id)
     setTours(newTour);
   }
 
