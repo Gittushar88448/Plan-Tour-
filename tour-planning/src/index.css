@@ -21,7 +21,8 @@ body{
 .top-heading{
   font-size: 3rem;
   margin:6vh;
-  border: 7px dashed rgb(112, 116, 150);
+  /* border: 7px dotted rgb(0, 0, 0); */
+  border-bottom: 7px solid rgb(52, 66, 77);
   border-radius: 20px;
   padding:1vh 5vw;
   color: rgb(0, 148, 116);
