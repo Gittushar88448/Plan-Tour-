@@ -54,6 +54,12 @@ body{
   object-fit: cover;
 }
 
+.image:hover{
+  transform: scale(1.03);
+  border-radius: 10px;
+  transition: all 200ms linear;
+}
+
 .card-desc{
   margin:20px 5px;
 }
